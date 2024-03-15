@@ -1,18 +1,18 @@
 # Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
 _commit: v4.2.5
 _src_path: https://github.com/jupyterlab/extension-template
-author_email: gautamsarawagi1@gmail.com
+author_email: gs@gmail.com
 author_name: gautam
 data_format: string
 file_extension: ''
 has_binder: false
 has_settings: false
 kind: frontend
-labextension_name: cbioportal-communication
+labextension_name: communication_extension
 mimetype: ''
 mimetype_name: ''
-project_short_description: A JupyterLab extension for cbioportal communication handling.
-python_name: cbioportal_communication
+project_short_description: A JupyterLab extension for communication.
+python_name: communication_extension
 repository: ''
 test: false
 viewer_name: ''

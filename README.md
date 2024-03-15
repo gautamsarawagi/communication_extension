@@ -1,7 +1,7 @@
-# cbioportal_communication
+# communication_extension
 
 [![Github Actions Status](/workflows/Build/badge.svg)](/actions/workflows/build.yml)
-A JupyterLab extension for cbioportal communication handling.
+A JupyterLab extension for communication.
 
 ## Requirements
 
@@ -12,7 +12,7 @@ A JupyterLab extension for cbioportal communication handling.
 To install the extension, execute:
 
 ```bash
-pip install cbioportal_communication
+pip install communication_extension
 ```
 
 ## Uninstall
@@ -20,7 +20,7 @@ pip install cbioportal_communication
 To remove the extension, execute:
 
 ```bash
-pip uninstall cbioportal_communication
+pip uninstall communication_extension
 ```
 
 ## Contributing
@@ -35,7 +35,7 @@ The `jlpm` command is JupyterLab's pinned version of
 
 ```bash
 # Clone the repo to your local environment
-# Change directory to the cbioportal_communication directory
+# Change directory to the communication_extension directory
 # Install package in development mode
 pip install -e "."
 # Link your development version of the extension with JupyterLab
@@ -64,12 +64,12 @@ jupyter lab build --minimize=False
 ### Development uninstall
 
 ```bash
-pip uninstall cbioportal_communication
+pip uninstall communication_extension
 ```
 
 In development mode, you will also need to remove the symlink created by `jupyter labextension develop`
 command. To find its location, you can run `jupyter labextension list` to figure out where the `labextensions`
-folder is located. Then you can remove the symlink named `cbioportal-communication` within that folder.
+folder is located. Then you can remove the symlink named `communication_extension` within that folder.
 
 ### Packaging the extension
 

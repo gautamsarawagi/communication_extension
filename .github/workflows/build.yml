@@ -36,7 +36,7 @@ jobs:
         python -m pip install .[test]
 
         jupyter labextension list
-        jupyter labextension list 2>&1 | grep -ie "cbioportal-communication.*OK"
+        jupyter labextension list 2>&1 | grep -ie "communication_extension.*OK"
         python -m jupyterlab.browser_check
 
     - name: Package the extension
@@ -45,13 +45,13 @@ jobs:
 
         pip install build
         python -m build
-        pip uninstall -y "cbioportal_communication" jupyterlab
+        pip uninstall -y "communication_extension" jupyterlab
 
     - name: Upload extension packages
       uses: actions/upload-artifact@v3
       with:
         name: extension-artifacts
-        path: dist/cbioportal_communication*
+        path: dist/communication_extension*
         if-no-files-found: error
 
   test_isolated:
@@ -74,11 +74,11 @@ jobs:
         sudo rm -rf $(which node)
         sudo rm -rf $(which node)
 
-        pip install "jupyterlab>=4.0.0,<5" cbioportal_communication*.whl
+        pip install "jupyterlab>=4.0.0,<5" communication_extension*.whl
 
 
         jupyter labextension list
-        jupyter labextension list 2>&1 | grep -ie "cbioportal-communication.*OK"
+        jupyter labextension list 2>&1 | grep -ie "communication_extension.*OK"
         python -m jupyterlab.browser_check --no-browser-test
 
 

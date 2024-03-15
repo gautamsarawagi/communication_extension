@@ -26,5 +26,5 @@ jobs:
       - name: Upload Distributions
         uses: actions/upload-artifact@v3
         with:
-          name: cbioportal_communication-releaser-dist-${{ github.run_number }}
+          name: communication_extension-releaser-dist-${{ github.run_number }}
           path: .jupyter_releaser_checkout/dist

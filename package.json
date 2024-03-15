@@ -1,7 +1,7 @@
 {
-    "name": "cbioportal-communication",
+    "name": "communication_extension",
     "version": "0.1.0",
-    "description": "A JupyterLab extension for cbioportal communication handling.",
+    "description": "A JupyterLab extension for communication.",
     "keywords": [
         "jupyter",
         "jupyterlab",
@@ -14,7 +14,7 @@
     "license": "BSD-3-Clause",
     "author": {
         "name": "gautam",
-        "email": "gautamsarawagi1@gmail.com"
+        "email": "gs@gmail.com"
     },
     "files": [
         "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
@@ -38,7 +38,7 @@
         "clean": "jlpm clean:lib",
         "clean:lib": "rimraf lib tsconfig.tsbuildinfo",
         "clean:lintcache": "rimraf .eslintcache .stylelintcache",
-        "clean:labextension": "rimraf cbioportal_communication/labextension cbioportal_communication/_version.py",
+        "clean:labextension": "rimraf communication_extension/labextension communication_extension/_version.py",
         "clean:all": "jlpm clean:lib && jlpm clean:labextension && jlpm clean:lintcache",
         "eslint": "jlpm eslint:check --fix",
         "eslint:check": "eslint . --cache --ext .ts,.tsx",
@@ -55,9 +55,8 @@
         "watch:labextension": "jupyter labextension watch ."
     },
     "dependencies": {
-        "@jupyterlab/application": "^4.0.0",
-        "@jupyterlite/server-extension": "^0.2.3",
-        "@jupyterlite/ui-components": "^0.2.3"
+        "@jupyterlab/application": "^4.1.5",
+        "@jupyterlab/apputils": "^4.2.5"
     },
     "devDependencies": {
         "@jupyterlab/builder": "^4.0.0",
@@ -93,7 +92,7 @@
     },
     "jupyterlab": {
         "extension": true,
-        "outputDir": "cbioportal_communication/labextension"
+        "outputDir": "communication_extension/labextension"
     },
     "eslintIgnore": [
         "node_modules",

@@ -7,9 +7,9 @@ node_modules/
 *.egg-info/
 .ipynb_checkpoints
 *.tsbuildinfo
-cbioportal_communication/labextension
+communication_extension/labextension
 # Version file is handled by hatchling
-cbioportal_communication/_version.py
+communication_extension/_version.py
 
 # Created by https://www.gitignore.io/api/python
 # Edit at https://www.gitignore.io/?templates=python

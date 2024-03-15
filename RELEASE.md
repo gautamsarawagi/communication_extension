@@ -1,4 +1,4 @@
-# Making a new release of cbioportal_communication
+# Making a new release of communication_extension
 
 The extension can be published to `PyPI` and `npm` manually or using the [Jupyter Releaser](https://github.com/jupyter-server/jupyter_releaser).
 

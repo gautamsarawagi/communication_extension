@@ -3,4 +3,4 @@ node_modules
 **/lib
 **/package.json
 !/package.json
-cbioportal_communication
+communication_extension
